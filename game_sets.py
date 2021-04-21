@@ -3,7 +3,7 @@ import random
 
 def display_table(table: list):
     '''
-    Display table
+    Display a square matrix containing dots.
     '''
 
     # Go through height of table
@@ -20,7 +20,11 @@ def display_table(table: list):
 
 
 def create_ship(size: int):
-    height, row = [random.randint(1, 10), random.randint(1, 10)]
+    """
+    Function to build a ship, parameters are the size of the ship (lenght).
+    """
+
+    height, row = [random.randint(1, 10), random.randint(0, 10)]
     direction = random.randint(1, 2)
     ship = set()
 
@@ -48,6 +52,10 @@ def create_ship(size: int):
 
 
 def validate_ships(ships: list):
+    """
+    Function to make sure there are no ships on the same coordinates. If there are it will create new ship with create_ship function.
+    It will return a new list with all the ships.
+    """
 
     ships_validated = []
 
@@ -74,3 +82,12 @@ def validate_ships(ships: list):
                 ships_validated.append(ship)
 
     return ships_validated
+
+
+def update_table(table: list, character: str, height: int, row: int):
+    """
+    Update square matrix of battleship.
+    """
+
+    table[height][row] = character
+    return table
