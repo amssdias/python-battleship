@@ -24,7 +24,7 @@ def create_ship(size: int):
     Function to build a ship, parameters are the size of the ship (lenght).
     """
 
-    height, row = [random.randint(1, 10), random.randint(0, 10)]
+    height, row = [random.randint(1, 10), random.randint(0, 9)]
     direction = random.randint(1, 2)
     ship = set()
 
