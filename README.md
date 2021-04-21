@@ -18,14 +18,14 @@ The user has a few chances to drop a bomb on the location of the ship by guessin
 python battleship.py
 ```
 
-Enjoy! ;)
+Enjoy!
 
 
 ## Files
 
 ### Battleship.py
 
-This is the main file, the file you want to run on your terminal window. We create the game and keep updating
+This is the main file, the file you want to run on your terminal window. We create the game and keep updating till you either win or lose.
 
 ### Game_sets.py
 
